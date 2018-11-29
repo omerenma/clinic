@@ -1,0 +1,932 @@
+doctype html
+html(lang="en")
+  head
+    // Meta Description Tag
+    meta(name="Description" content="Klinik is a HTML5 & CSS3 responsive template")
+    // Favicon Icon
+    link(rel="icon" type="image/x-icon" href="images/favicon.png")
+    // Font Awesoeme Stylesheet CSS
+    link(rel="stylesheet" href="font-awesome/css/font-awesome.min.css")
+    // Google web Font
+    link(rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,500")
+    // Bootstrap core CSS
+    link(rel="stylesheet" href="css/bootstrap.min.css")
+    // Material Design Lite Stylesheet CSS
+    link(rel="stylesheet" href="css/material.min.css")
+    // Material Design Select Field Stylesheet CSS
+    link(rel="stylesheet" href="css/mdl-selectfield.min.css")
+    // Owl Carousel Stylesheet CSS
+    link(rel="stylesheet" href="css/owl.carousel.min.css")
+    // Animate Stylesheet CSS
+    link(rel="stylesheet" href="css/animate.min.css")
+    // Magnific Popup Stylesheet CSS
+    link(rel="stylesheet" href="css/magnific-popup.css")
+    // Flex Slider Stylesheet CSS
+    link(rel="stylesheet" href="css/flexslider.css")
+    // Custom Main Stylesheet CSS
+    link(rel="stylesheet" href="css/style.css")
+    // Site Title
+    title Gospel Clinic  #{title}
+  
+  body
+    // Start Header
+    header#header-3
+      // Start Header Top Section
+      #hdr-top-wrapper
+        .layer-stretch.hdr-top
+          .row
+            .col-md-6.text-left.hidden-xs
+              .hdr-top-block
+                #hdr-social
+                  ul.social-list.social-list-sm
+                    li
+                      a.width-auto.font-13 Social Links : 
+                    li
+                      a#hdr-facebook(href="#" target="_blank")
+                        i.fa.fa-facebook
+                      span.mdl-tooltip.mdl-tooltip--bottom(data-mdl-for="hdr-facebook") Facebook
+                    li
+                      a#hdr-twitter(href="#" target="_blank")
+                        i.fa.fa-twitter
+                      span.mdl-tooltip.mdl-tooltip--bottom(data-mdl-for="hdr-twitter") Twitter
+                    li
+                      a#hdr-google(href="#" target="_blank")
+                        i.fa.fa-google
+                      span.mdl-tooltip.mdl-tooltip--bottom(data-mdl-for="hdr-google") Google
+                    li
+                      a#hdr-instagram(href="#" target="_blank")
+                        i.fa.fa-instagram
+                      span.mdl-tooltip.mdl-tooltip--bottom(data-mdl-for="hdr-instagram") Instagram
+                    li
+                      a#hdr-youtube(href="#" target="_blank")
+                        i.fa.fa-youtube
+                      span.mdl-tooltip.mdl-tooltip--bottom(data-mdl-for="hdr-youtube") Youtube
+                    li
+                      a#hdr-linkedin(href="#" target="_blank")
+                        i.fa.fa-linkedin
+                      span.mdl-tooltip.mdl-tooltip--bottom(data-mdl-for="hdr-linkedin") Linkedin
+                    li
+                      a#hdr-flickr(href="#" target="_blank")
+                        i.fa.fa-flickr
+                      span.mdl-tooltip.mdl-tooltip--bottom(data-mdl-for="hdr-flickr") Flickr
+                    li
+                      a#hdr-rss(href="#" target="_blank")
+                        i.fa.fa-rss
+                      span.mdl-tooltip.mdl-tooltip--bottom(data-mdl-for="hdr-rss") Rss
+            .col-md-6.text-right
+              .hdr-top-block
+                .d-none.d-sm-block.d-md-block.d-lg-block.d-xl-block
+                  .theme-dropdown
+                    a.mdl-button.mdl-js-button.mdl-js-ripple-effect.font-13.font-400.pr-2.pl-2(href="#")
+                      i.fa.fa-sign-in.font-14
+                      |  Login
+                  .hdr-top-line
+                  .theme-dropdown
+                    a.mdl-button.mdl-js-button.mdl-js-ripple-effect.font-13.font-400.pr-2.pl-2(href="#")
+                      i.fa.fa-user-plus.font-14
+                      |  Register
+              .hdr-top-line
+              .hdr-top-block
+                .theme-dropdown
+                  a#profile-menu.mdl-button.mdl-js-button.mdl-js-ripple-effect.font-13
+                    i.fa.fa-user-o.color-black
+                    |  My Account
+                  ul.mdl-menu.mdl-menu--bottom-right.mdl-js-menu.mdl-js-ripple-effect.metarial-menu(data-mdl-for="profile-menu")
+                    li.mdl-menu__item
+                      a(href="login")
+                        i.fa.fa-sign-in
+                        | Login
+                    // <li class="mdl-menu__item"><a data-toggle="modal" data-target="#loginpopup"><i class="fa fa-sign-in"></i>Login Popup</a></li>
+                    li.mdl-menu__item
+                      a(href="register")
+                        i.fa.fa-user-o
+                        | Register
+                     <li class="mdl-menu__item"><a data-toggle="modal" data-target="#registerpopup"><i class="fa fa-user-o"></i>Register Popup</a></li>
+                    li.mdl-menu__item
+                      a(href="register")
+                        i.fa.fa-key
+                        | Forgot Password
+                    li.mdl-menu__item
+                      a(href="about.html")
+                        i.fa.fa-info
+                        | Help
+      // End Header Top Section
+      .layer-stretch.hdr-center
+        .row.align-items-center
+          .col-2
+            .hdr-center-logo
+              a.d-inline-block(href="index.jade")
+                img(src="images/logo.png" alt="")
+          .col-10
+            .hdr-center-submenu.row.pull-right
+              .col-md-auto.mr-3.d-none.d-sm-none.d-md-none.d-lg-block.d-xl-block
+                .tbl-cell
+                  i.fa.fa-envelope-o
+                .tbl-cell.text-left.p-0
+                  p.font-12.m-0.text-muted Have a question?
+                  p.font-14.m-0 support@mkhealth.com
+              .col-md-auto.d-none.d-sm-none.d-md-block.d-lg-block.d-xl-block
+                .tbl-cell
+                  i.fa.fa-mobile.font-28
+                .tbl-cell.text-left.p-0
+                  p.font-12.m-0.text-muted  Need  a help?
+                  p.font-14.m-0 (+234)8130299583
+              .col-md-auto.pl-3.d-none.d-sm-block.d-md-block.d-lg-block.d-xl-block
+                button.mdl-button.mdl-button--colored.mdl-button--raised.mdl-js-button.mdl-js-ripple-effect.hdr-apointment
+                  i.fa.fa-calendar.m-0.color-white
+                  |  Make An Appointment
+      .hdr-center-menu
+        .hdr.layer-stretch
+          .row.align-items-center.justify-content-end
+            // Start Menu Section
+            ul.col.menu.text-left
+              li
+                a#menu-home.mdl-button.mdl-js-button.mdl-js-ripple-effect
+                  | Home 
+                  i.fa.fa-chevron-down
+                //
+                  <ul class="menu-dropdown">
+                  <li><a href="index.html">Home Style 1</a></li>
+                  <li><a href="index-1.html">Home Style 2</a></li>
+                  <li><a href="index-2.html">Home Style 3</a></li>
+                  <li><a href="index-3.html">Home Style 4</a></li>
+                  <li><a href="index-4.html">Home Style 5</a></li>
+                  <li><a href="index-5.html">Home Style 6</a></li>
+                  </ul>
+              li.menu-megamenu-li
+                a#menu-pages.mdl-button.mdl-js-button.mdl-js-ripple-effect
+                  | About 
+                  i.fa.fa-chevron-down
+                ul.menu-megamenu
+                  li.row
+                    .col-lg-3
+                      // <div class="megamenu-ttl">Link 1</div>
+                      ul
+                        // <li><a href="event-1.html">Event Style 1</a></li>
+                        //
+                          <li><a href="event-2.html">Event Style 2</a></li>
+                          <li><a href="event-3.html">Event Style 3</a></li>
+                          <li><a href="faq.html">FAQ</a></li>
+                          <li><a href="503.html">503 Temporarily Unavailable</a></li>
+                    .col-lg-3
+                      // <div class="megamenu-ttl">Link 2</div>
+                      //
+                        <ul>
+                        <li><a href="departments-1.html">Departments Style 1</a></li>
+                        <li><a href="departments-2.html">Departments Style 2</a></li>
+                        <li><a href="gallery.html">Gallery Style 1</a></li>
+                        <li><a href="gallery-1.html">Gallery Style 2</a></li>
+                        <li><a href="404.html">404 Page Not Found</a></li>
+                        </ul>
+                    .col-lg-2
+                      // <div class="megamenu-ttl">Link 3</div>
+                      ul
+                        li
+                          a(href="about") About Us
+                        
+                          //- <li><a href="about.jade">About Us</a></li>
+                          //- <li><a href="invoice.html">Invoice</a></li>
+                          //- <li><a href="terms-conditions.html">Terms &#38; Conditions</a></li>
+                          //- <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    //
+                      <div class="col-lg-4">
+                      <div class="theme-img">
+                      <img src="uploads/service-5.jpg" alt="">
+                      </div>
+                      </div>
+              li
+                a#menu-service.mdl-button.mdl-js-button.mdl-js-ripple-effect(href="services-1.html")
+                  | Service 
+                  i.fa.fa-chevron-down
+                ul.menu-dropdown
+                   <li>
+                   a(href="services") Services
+                  // <ul class="menu-dropdown">
+                  // <li><a href="services-1.html">Services Style 1</a></li>
+                  //
+                    <li><a href="services-4.html">Services Style 1 with Right Sidebar</a></li>
+                    <li><a href="services-7.html">Services Style 1 with Left Sidebar</a></li>
+                  //
+                    </ul>
+                    </li>
+                  //
+                    <li>
+                    <a>Servcie Style 2</a>
+                    <ul class="menu-dropdown">
+                    <li><a href="services-2.html">Services Style 2</a></li>
+                    <li><a href="services-5.html">Services Style 2 with Right Sidebar</a></li>
+                    <li><a href="service.html">Single Service Page</a></li>
+                    </ul>
+                    </li>
+                  //
+                    <li>
+                    <a>Service Style 3</a>
+                    <ul class="menu-dropdown">
+                    <li><a href="services-3.html">Services Style 3</a></li>
+                    <li><a href="services-6.html">Services Style 3 with Right Sidebar</a></li>
+                    <li><a href="services-8.html">Services Style 3 with Left Sidebar</a></li>
+                    </ul>
+                    </li>
+                  //
+                    <li>
+                    <a>Services Style 4</a>
+                    <ul class="menu-dropdown">
+                    <li><a href="services-9.html">Services Style 4</a></li>
+                    <li><a href="services-9.html">Services Style 4 with Right Sidebar</a></li>
+                    </ul>
+                    </li>
+                  // <li><a href="service.html">Service Detail</a></li>
+              li.menu-megamenu-li
+                a#menu-doctor.mdl-button.mdl-js-button.mdl-js-ripple-effect(href="doctors")
+                  | Doctors 
+                  //- i.fa.fa-chevron-down
+                  //- //- a(href="doctors") Doctors
+                
+              //-     <ul class="menu-megamenu">
+              //-     <li class="row">
+              //-     <div class="col-lg-4">
+              //-     <div class="megamenu-ttl">Doctors Link</div>
+              //-     <ul>
+              //-     <li><a href="doctors-1.html">Doctors Style 1</a></li>
+              //-     <li><a href="doctors-2.html">Doctors Style 2</a></li>
+              //-     <li><a href="doctors-3.html">Doctors Style 3</a></li>
+              //-     <li><a href="doctors-4.html">Doctors Style 1 with Right Sidebar</a></li>
+              //-     <li><a href="doctors-7.html">Doctors Style 1 with Left Sidebar</a></li>
+              //-     </ul>
+              //-     </div>
+              //-     <div class="col-lg-4">
+              //-     <div class="megamenu-ttl">Doctors Link</div>
+              //-     <ul>
+              //-     <li><a href="doctors-5.html">Doctors Style 2 with Right Sidebar</a></li>
+              //-     <li><a href="doctors-6.html">Doctors Style 3 with Right Sidebar</a></li>
+              //-     <li><a href="doctors-8.html">Doctors Style 3 with left Sidebar</a></li>
+              //-     <li><a href="doctor-1.html">Doctor Detail Style 1</a></li>
+              //-     <li><a href="doctor-2.html">Doctor Detail Style 2</a></li>
+              //-     </ul>
+              //-     </div>
+              //-     <div class="col-lg-4 d-none d-sm-none s-md-none d-lg-block d-xl-block">
+              //-     <div class="megamenu-ttl">Our Skills &#38; Achievement</div>
+              //-     <div class="doctor-skills mt-2">
+              //-     <p class="font-14">Brain Surgery <span class="badge badge-primary badge-pill float-right">75%</span></p>
+              //-     <div class="progress progress-sm mb-4">
+              //-     <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              //-     </div>
+              //-     </div>
+              //-     <div class="doctor-skills">
+              //-     <p class="font-14">Heart Surgery <span class="badge badge-danger badge-pill float-right">65%</span></p>
+              //-     <div class="progress progress-sm mb-4">
+              //-     <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+              //-     </div>
+              //-     </div>
+              //-     <div class="doctor-skills">
+              //-     <p class="font-14">General Surgery <span class="badge badge-warning badge-pill float-right">87%</span></p>
+              //-     <div class="progress progress-sm mb-4">
+              //-     <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 87%" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"></div>
+              //-     </div>
+              //-     </div>
+              //-     </div>
+              //-     </li>
+              //-     </ul>
+              //- //
+              //-   <li>
+              //-   <a id="menu-blog" class="mdl-button mdl-js-button mdl-js-ripple-effect">Blog <i class="fa fa-chevron-down"></i>
+              //-   </a>
+              //-   <ul class="menu-dropdown">
+              //-   <li>
+              //-   <a>Blog Style 1</a>
+              //-   <ul class="menu-dropdown">
+              //-   <li><a href="blogs-1.html">Blog style 1</a></li>
+              //-   <li><a href="blogs-3.html">Blog style 1 with Right Sidebar</a></li>
+              //-   <li><a href="blogs-5.html">Blog style 1 with Left Sidebar</a></li>
+              //-   </ul>
+              //-   </li>
+              //-   <li>
+              //-   <a>Blog Style 2</a>
+              //-   <ul class="menu-dropdown">
+              //-   <li><a href="blogs-2.html">Blog style 2</a></li>
+              //-   <li><a href="blogs-4.html">Blog style 2 with Right Sidebar</a></li>
+              //-   </ul>
+              //-   </li>
+              //-   <li>
+              //-   <a>Blog Style 3</a>
+              //-   <ul class="menu-dropdown">
+              //-   <li><a href="blogs-6.html">Blog style 3 with Right Sidebar</a></li>
+              //-   <li><a href="blogs-7.html">Blog style 3 with Left Sidebar</a></li>
+              //-   </ul>
+              //-   </li>
+              //-   <li><a href="blog-1.html">Blog Details 1</a></li>
+              //-   <li><a href="blog-2.html">Blog Details 2</a></li>
+              //-   </ul>
+              //-   </li>
+                
+              li
+                a#menu-profile.mdl-button.mdl-js-button.mdl-js-ripple-effect
+                  | Profile 
+                  i.fa.fa-chevron-down
+                ul.menu-dropdown
+                  li
+                    a(href="login") Login 
+                  li
+                    a(data-toggle="modal" data-target="#loginpopup") Login Popup
+                  li
+                    a(href="register") Register 
+                  li
+                    a(data-toggle="modal" data-target="#registerpopup") Register Popup
+                  li
+                    a(href="myappointment") My Appointment 
+                  li
+                    a(href="myrequest") My Request 
+                  li
+                    a(href="myprofile") My Profile
+              // <li><a href="components.html" id="menu-shortcodes" class="mdl-button mdl-js-button mdl-js-ripple-effect">Components</a></li>
+              li
+              li.mobile-menu-close
+                i.fa.fa-times
+            // End Menu Section
+            .col-2.col-md-auto.col-lg-auto
+              .mdl-button.mdl-js-button.mdl-button--fab.hdr-search
+                i.fa.fa-search.fa-2x.color-white
+            #menu-bar.col-2.col-md-auto
+              a
+                i.fa.fa-bars.color-white
+          .search-banner.animated.fadeInUp
+            input(type="text" placeholder="Search your Query ...")
+    // End Header
+    // Start Slider Section
+    #slider.slider-height
+      .flexslider.slider-wrapper
+        ul.slides
+          li
+            .slider-info
+              h1.animated.fadeInDown Gospel Hospitals and Clinics
+              p.animated.fadeInDown We provide quality health services
+            img(src="uploads/img4.jpg" alt="")
+            .slider-button.slider-appointment
+              a.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.animated.fadeInUp
+                | Make An Appointment
+                i.fa.fa-flag-checkered
+          li
+            .slider-info
+              h2 Your Quality Health
+              p It is our oughtmost priority to ensure your well-being
+            img(src="uploads/img6.jpg" alt="")
+            .slider-button.slider-appointment
+              a.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.animated.fadeInUp
+                | More Info
+                i.fa.fa-external-link
+          li
+            .slider-info
+              h2 24/7 Doctor's Services
+              p Our efficient doctors are always available to attend to your health issues
+            img(src="uploads/img3.jpg" alt="")
+            .slider-button.slider-appointment
+              a.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.animated.fadeInUp
+                | About Us
+                i.fa.fa-chevron-right
+    // End Slider Section
+    // Start Service Section
+    #hm-service.layer-stretch
+      .layer-wrapper
+        .layer-ttl
+          h3 What We Do
+        .layer-container.row
+          .hm-service-left.col-md-5
+            img(src="uploads/img7.jpg" alt="Klinical Health care")
+          .hm-service-right.col-md-7
+            p.paragraph-medium.paragraph-black
+              | Klinik is a HTML5 & CSS3 responsive template created for clinic and hospital but also can be used for generalised website. It is a fully responsive, feature rich and beautifully designed to host a website or create online identity. We have created 55+ pages and 200+ components for this template and much more in future. It supports bootstrap framework and intergrated font awesome icon set so easy to customise and develop your own styles.
+            .hm-service
+              .hm-service-block
+                i.fa.fa-stethoscope
+                span Cardiovascular centre
+              .hm-service-block
+                i.fa.fa-child
+                span Childbirth Center
+              .hm-service-block
+                i.fa.fa-certificate
+                span Mammography
+              .hm-service-block
+                i.fa.fa-h-square
+                span Dermatologist
+              .hm-service-block
+                i.fa.fa-stethoscope
+                span Paediatrics
+              .hm-service-block
+                i.fa.fa-bullhorn
+                span Radiology Center
+            .hm-service-view.text-center
+              a.button-icon(href="")
+                span View All Services
+                i.fa.fa-eye
+    // End Service Section
+    // Start About Section
+    #hm-about.colored-background
+      .layer-stretch
+        .layer-wrapper
+          .layer-ttl.layer-ttl-white
+            h3 Who We Are
+          .row
+            .col-md-7
+              .hm-about-block
+                .tbl-cell.hm-about-icon
+                  i.fa.fa-user-md
+                .tbl-cell.hm-about-number
+                  span.counter 54
+                  p Doctor(s)
+              .hm-about-block
+                .tbl-cell.hm-about-icon
+                  i.fa.fa-ambulance
+                .tbl-cell.hm-about-number
+                  span.counter 130
+                  p Room(s)
+              .hm-about-block
+                .tbl-cell.hm-about-icon
+                  i.fa.fa-calendar
+                .tbl-cell.hm-about-number
+                  span.counter 51
+                  p Year of Experience(s)
+              .hm-about-block
+                .tbl-cell.hm-about-icon
+                  i.fa.fa-clock-o
+                .tbl-cell.hm-about-number
+                  span.counter 168
+                  p Opening Hours per Week
+              .hm-about-paragraph
+                p.paragraph-medium.paragraph-white
+                  span.theme-dropcap.color-white K
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, maxime! ! ! Saepe earum aliquam, consequuntur quod corporis amet ratione fugiat ab pariatur autem, dolores inventore. Error nam, mollitia maiores temp fugit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, maxime! Saepe earum aliquam, consequuntur quod corporis amet ratione fugiat ab pariatur aute, dolores inventore. Est wisi interpretaris te. Velit oblique vel ex, mea sanctus blandit quaerendum ea, cu movet viris posidonium cum. Ea expetenda repudiandae sit. No animal facilisi conclusionemque pri, cetero reprehendunt te sed.
+            .col-md-5
+              img.img-thumbnail(src="uploads/img8.jpg" alt="")
+    // End About Section
+    // Start Feature Section
+    #hm-feature.layer-stretch
+      .layer-wrapper.layer-bottom-10
+        .layer-ttl
+          h3 Why Choose Us
+        .row
+          .col-sm-6.col-md-4
+            .hm-feature-block-1
+              .theme-img.theme-img-scalerotate
+                img(src="uploads/img9.jpg" alt="")
+              span Emergency Departments
+              p.paragraph-small.paragraph-black
+                | Mel in hinc veri admodum, copiosae epicurei mea ei. Cum at nisl soleat. Eam insolens referrentur efficiantur an. Nibh deleniti ad vix, quodsi aliquam legendos pri in.
+          .col-sm-6.col-md-4
+            .hm-feature-block-1
+              .theme-img.theme-img-scalerotate
+                img(src="uploads/imgg1.jpg" alt="")
+              span 24 hour Service
+              p.paragraph-small.paragraph-black
+                | Mel in hinc veri admodum, copiosae epicurei mea ei. Cum at nisl soleat. Eam insolens referrentur efficiantur an. Nibh deleniti ad vix, quodsi aliquam legendos pri in.
+          .col-sm-6.col-md-4
+            .hm-feature-block-1
+              .theme-img.theme-img-scalerotate
+                img(src="uploads/imgg2.jpg" alt="")
+              span Advanced Technology
+              p.paragraph-small.paragraph-black
+                | Mel in hinc veri admodum, copiosae epicurei mea ei. Cum at nisl soleat. Eam insolens referrentur efficiantur an. Nibh deleniti ad vix, quodsi aliquam legendos pri in.
+          .col-sm-6.col-md-4
+            .hm-feature-block-1
+              .theme-img.theme-img-scalerotate
+                img(src="uploads/ambulance.jpg" alt="")
+              span Ambulance
+              p.paragraph-small.paragraph-black
+                | Mel in hinc veri admodum, copiosae epicurei mea ei. Cum at nisl soleat. Eam insolens referrentur efficiantur an. Nibh deleniti ad vix, quodsi aliquam legendos pri in.
+          .col-sm-6.col-md-4
+            .hm-feature-block-1
+              .theme-img.theme-img-scalerotate
+                img(src="uploads/ambu.jpg" alt="")
+              span Primary health care
+              p.paragraph-small.paragraph-black
+                | Mel in hinc veri admodum, copiosae epicurei mea ei. Cum at nisl soleat. Eam insolens referrentur efficiantur an. Nibh deleniti ad vix, quodsi aliquam legendos pri in.
+          .col-sm-6.col-md-4
+            .hm-feature-block-1
+              .theme-img.theme-img-scalerotate
+                img(src="uploads/img9.jpg" alt="")
+              span Pharmacies and drug stores
+              p.paragraph-small.paragraph-black
+                | Mel in hinc veri admodum, copiosae epicurei mea ei. Cum at nisl soleat. Eam insolens referrentur efficiantur an. Nibh deleniti ad vix, quodsi aliquam legendos pri in.
+    // End Feature Section
+    // Start Doctor Section
+    .colored-background
+      .layer-stretch
+        .layer-wrapper
+          .layer-ttl.layer-ttl-white
+            h3 Meet Our Doctors
+          .layer-container
+            #hm-doctor-slider.owl-carousel.owl-theme.theme-owl-dot
+              .hm-doctor
+                img.img-responsive(src="uploads/slide-doctor-1.jpg" alt="")
+                h6 Dr. Daniel Barnes
+                p Orthologist
+              .hm-doctor
+                img.img-responsive(src="uploads/slide-doctor-2.jpg" alt="")
+                h6 Dr. Melisa bates
+                p Gynocologist
+              .hm-doctor
+                img.img-responsive(src="uploads/slide-doctor-3.jpg" alt="")
+                h6 Dr. Cheri Aria
+                p Dermatologist
+              .hm-doctor
+                img.img-responsive(src="uploads/slide-doctor-4.jpg" alt="")
+                h6 Steve Soeren
+                p Orthologist
+              .hm-doctor
+                img.img-responsive(src="uploads/slide-doctor-5.jpg" alt="")
+                h6 Barbara Baker
+                p Surgeon
+              .hm-doctor
+                img.img-responsive(src="uploads/slide-doctor-6.jpg" alt="")
+                h6 Linda Adams
+                p Gynocologist
+              .hm-doctor
+                img.img-responsive(src="uploads/slide-doctor-7.jpg" alt="")
+                h6 Emily Rasberry
+                p Pathologist
+              .hm-doctor
+                img.img-responsive(src="uploads/slide-doctor-8.jpg" alt="")
+                h6 Nancy Allen
+                p Gynocologist
+    // End Doctor Section
+    // Start Blog Section
+    #hm-blog.layer-stretch
+      .layer-wrapper.layer-bottom-10
+        .layer-ttl
+          h3 Latest Posts
+        .row
+          .col-md-6
+            .blog-list-block
+              .blog-list-picture
+                .theme-img.theme-img-scalerotate
+                  img(src="uploads/blog-4.jpg" alt="")
+              .blog-list-ttl
+                h3
+                  a(href="#") Why Food Poisoning happened and How To  – Home Remedy
+              .blog-list-meta
+                p Posted By Melissa Bates On 08 Jun 2017
+              .blog-list-post
+                p.paragraph-medium.paragraph-black
+                  span
+                    | Restinguet citius, si ardentem acceperit. Non est enim vitium in oratione solum, sed etiam in moribus. In schola desinis. An haec ab eo non dicuntur? Longum est enim ad omnia respondere, quae a te dicta sunt. Cetera illa adhibebat, quibus demptis negat se Epicurus intellegere quid sit bonum.
+                  a(href="#") (Read More)
+          .col-md-6
+            .blog-list-block
+              .blog-list-picture
+                .theme-img.theme-img-scalerotate
+                  img(src="uploads/blog-5.jpg" alt="")
+              .blog-list-ttl
+                h3
+                  a(href="#") All you need to know about Chinese Food, Is it good or bad?
+              .blog-list-meta
+                p Posted By Daniel Barnes On 05 Jun 2017
+              .blog-list-post
+                p.paragraph-medium.paragraph-black
+                  span
+                    | Restinguet citius, si ardentem acceperit. Non est enim vitium in oratione solum, sed etiam in moribus. In schola desinis. An haec ab eo non dicuntur? Longum est enim ad omnia respondere, quae a te dicta sunt. Cetera illa adhibebat, quibus demptis negat se Epicurus intellegere quid sit bonum.
+                  a(href="#") (Read More)
+    // End Blog Section
+    // Start Testimonial Section
+    #testimonial.colored-background
+      .layer-stretch
+        .layer-wrapper
+          .layer-ttl.layer-ttl-white
+            h3 What People Say
+          .layer-container
+            #testimonial-slider.owl-carousel.owl-theme.theme-owl-dot
+              .testimonial-block
+                img.img-responsive(src="uploads/testimonial-1.jpg" alt="")
+                .paragraph-medium.paragraph-white
+                  i.fa.fa-quote-left
+                  |                                 This was my second visit here I loved it first visit but love it more on my second visit. I loved thier facility and online system. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam veniam sit nemo eveniet recusandae nihil nesciunt rerum alias.
+                a Reuben Snow
+              .testimonial-block
+                img.img-responsive(src="uploads/testimonial-2.jpg" alt="")
+                .paragraph-medium.paragraph-white
+                  i.fa.fa-quote-left
+                  |                                 Thank you for the remedy. I feel it has been working on a deeper subtle level. An inner seeing. I have had the feeling of a melting inside and great sense of peace and rightness. I experienced this before with your perception and treatment so thank you very much.
+                a Julien Cain
+              .testimonial-block
+                img.img-responsive(src="uploads/testimonial-3.jpg" alt="")
+                .paragraph-medium.paragraph-white
+                  i.fa.fa-quote-left
+                  |                                 Thank you for the remedy. I feel it has been working on a deeper subtle level. An inner seeing. I have had the feeling of a melting inside and great sense of peace and rightness. I experienced this before with your perception and treatment so thank you very much.
+                a Naum Gabo
+              .testimonial-block
+                img.img-responsive(src="uploads/testimonial-4.jpg" alt="")
+                .paragraph-medium.paragraph-white
+                  i.fa.fa-quote-left
+                  |                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias corporis ad veniam, illo expedita aut quaerat voluptatem, magni voluptas necessitatibus omnis error quia deserunt asperiores beatae fugiat quisquam magnam mollitia!
+                a Winceton Logo
+              .testimonial-block
+                img.img-responsive(src="uploads/testimonial-5.jpg" alt="")
+                .paragraph-medium.paragraph-white
+                  i.fa.fa-quote-left
+                  |                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias corporis ad veniam, illo expedita aut quaerat voluptatem, magni voluptas necessitatibus omnis error quia deserunt asperiores beatae fugiat quisquam magnam mollitia!
+                a Robert Bratheon
+    // End Testimonial Section
+    // Start Emergency Section
+    #emergency
+      .layer-stretch
+        .layer-wrapper
+          .layer-ttl
+            h3 On Emergency
+          .layer-container
+            .paragraph-medium.paragraph-black
+              | Distress line
+            .emergency-number Call : 08130299583
+    // End Emergency Section
+    // Start Make an Appointment Modal
+    #appointment.modal.fade(role="dialog")
+      .modal-dialog.modal-lg
+        .modal-content
+          .modal-header.text-center
+            h5.modal-title Make An Appointment
+            button.close(type="button" data-dismiss="modal") ×
+          .modal-body
+            .appointment-error
+            .row
+              .col-md-6
+                .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.form-input-icon
+                  i.fa.fa-user-o
+                  input#appointment-name.mdl-textfield__input(type="text" pattern="[A-Z,a-z, ]*")
+                  label.mdl-textfield__label(for="appointment-name") Name
+                  span.mdl-textfield__error Please Enter Valid Name!
+              .col-md-6
+                .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.form-input-icon
+                  i.fa.fa-envelope-o
+                  input#appointment-email.mdl-textfield__input(type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$")
+                  label.mdl-textfield__label(for="appointment-email") Email
+                  span.mdl-textfield__error Please Enter Valid Email!
+              .col-md-6
+                .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.form-input-icon
+                  i.fa.fa-phone
+                  input#appointment-mobile.mdl-textfield__input(type="text" pattern="[0-9]*")
+                  label.mdl-textfield__label(for="appointment-mobile") Mobile Number
+                  span.mdl-textfield__error Please Enter Valid Mobile Number!
+              .col-md-6
+                .mdl-selectfield.mdl-js-selectfield.mdl-selectfield--floating-label.form-input-icon
+                  i.fa.fa-hospital-o
+                  select#appointment-department.mdl-selectfield__select
+                    option(value="")  
+                    option(value="1") Gynaecology
+                    option(value="2") Orthology
+                    option(value="3") Dermatologist
+                    option(value="4") Anaesthesia
+                    option(value="5") Ayurvedic
+                  label.mdl-selectfield__label(for="appointment-department") Choose Department
+              .col-md-6
+                .mdl-selectfield.mdl-js-selectfield.mdl-selectfield--floating-label.form-input-icon
+                  i.fa.fa-user-md
+                  select#appointment-doctor.mdl-selectfield__select
+                    option(value="")  
+                    option(value="1") Dr. Daniel Barnes
+                    option(value="2") Dr. Steve Soeren
+                    option(value="3") Dr. Barbara Baker
+                    option(value="4") Dr. Melissa Bates
+                    option(value="5") Dr. Linda Adams
+                  label.mdl-selectfield__label(for="appointment-doctor") Choose Doctor
+              .col-md-6
+                .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.form-input-icon
+                  i.fa.fa-calendar-o
+                  input#appointment-date.mdl-textfield__input(type="text" onfocus="(this.type='date')" onblur="(this.type='text')")
+                  label.mdl-textfield__label(for="appointment-date") Date
+                  span.mdl-textfield__error Please Enter Valid Date Number!
+            .text-center.pt-4
+              button.mdl-button.mdl-js-button.mdl-button--colored.mdl-js-ripple-effect.mdl-button--raised.button.button-primary.button-lg.make-appointment Submit
+    // End Make an Appointment Modal
+    // Start Login Modal
+    #loginpopup.modal.fade(role="dialog")
+      .modal-dialog
+        .modal-content
+          .modal-header.text-center
+            h5.modal-title Login Now
+            button.close(type="button" data-dismiss="modal") ×
+          .modal-body.text-center
+            .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.form-input-icon
+              i.fa.fa-envelope-o
+              input#loginpopup-email.mdl-textfield__input(type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$")
+              label.mdl-textfield__label(for="loginpopup-email")
+                | Email 
+                em  *
+              span.mdl-textfield__error Please Enter Valid Email!
+            .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.form-input-icon
+              i.fa.fa-key
+              input#loginpopup-password.mdl-textfield__input(type="password")
+              label.mdl-textfield__label(for="loginpopup-password")
+                | Password 
+                em  *
+              span.mdl-textfield__error Please Enter Valid Password!
+              .forgot-pass Forgot Password?
+            .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.form-input-icon.form-bot-check
+              i.fa.fa-question
+              input#loginpopup-bot.mdl-textfield__input(type="number")
+              label.mdl-textfield__label(for="loginpopup-bot")
+                | What is 7 plus 1 = 
+                em * 
+              span.mdl-textfield__error Please Enter Correct Value!
+            .form-submit
+              button.mdl-button.mdl-js-button.mdl-js-ripple-effect.button.button-primary Login Now
+            .or-using Or Using
+            .social-login
+              a.social-facebook(href="#")
+                i.fa.fa-facebook
+                | Facebook
+              a.social-google(href="#")
+                i.fa.fa-google
+                | Google
+            .login-link
+              span.paragraph-small Don't have an account?
+              a(href="#") Register as New User
+    // End Login Modal
+    // Start Register Modal
+    #registerpopup.modal.fade(role="dialog")
+      .modal-dialog
+        .modal-content
+          .modal-header.text-center
+            h5.modal-title Register as New User
+            button.close(type="button" data-dismiss="modal") ×
+          .modal-body.text-center
+            .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.form-input-icon
+              i.fa.fa-user-o
+              input#registerpopup-name.mdl-textfield__input(type="text" pattern="[A-Z,a-z, ]*")
+              label.mdl-textfield__label(for="registerpopup-name")
+                | Name 
+                em  *
+              span.mdl-textfield__error Please Enter Valid Name!
+            .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.form-input-icon
+              i.fa.fa-envelope-o
+              input#registerpopup-email.mdl-textfield__input(type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$")
+              label.mdl-textfield__label(for="registerpopup-email")
+                | Email 
+                em  *
+              span.mdl-textfield__error Please Enter Valid Email!
+            .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.form-input-icon
+              i.fa.fa-key
+              input#registerpopup-password.mdl-textfield__input(type="password")
+              label.mdl-textfield__label(for="registerpopup-password")
+                | Password 
+                em  *
+              span.mdl-textfield__error Please Enter Valid Password(Min 6 Character)!
+            .login-condition
+              | By clicking Creat Account you agree to our 
+              a(href="#") terms & condition
+            .form-submit
+              button.mdl-button.mdl-js-button.mdl-js-ripple-effect.button.button-primary Create Account
+            .or-using Or Using
+            .social-login
+              a.social-facebook(href="#")
+                i.fa.fa-facebook
+                | Facebook
+              a.social-google(href="#")
+                i.fa.fa-google
+                | Google
+            .login-link
+              span.paragraph-small Already have an account?
+              a(href="#") Login Now
+    // End Register Modal
+    // Fixed Appointment Button at Bottom
+    #appointment-button.animated.fadeInUp
+      button#appointment-now.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored.mdl-button--raised
+        i.fa.fa-plus
+      .mdl-tooltip.mdl-tooltip--top(data-mdl-for="appointment-now") Make An Appointment
+    // End Fixed Appointment Button at Bottom
+    // Start Footer Section
+    footer#footer
+      .layer-stretch
+        // Start main Footer Section
+        .row.layer-wrapper
+          .col-md-4.footer-block
+            .footer-ttl
+              p Contact
+            .footer-container.footer-a
+              .tbl
+                .tbl-row
+                  .tbl-cell
+                    i.fa.fa-map-marker
+                  .tbl-cell
+                    p.paragraph-medium.paragraph-white
+                      | KinMar ICT, Total corner shop
+                      br
+                      |                                         Lugbe, 
+                      br
+                      |                                         Abuja.
+                .tbl-row
+                  .tbl-cell
+                    i.fa.fa-phone
+                  .tbl-cell
+                    p.paragraph-medium.paragraph-white 2348130299583
+                .tbl-row
+                  .tbl-cell
+                    i.fa.fa-envelope
+                  .tbl-cell
+                    p.paragraph-medium.paragraph-white gospelclinic@gmail.com
+          .col-md-4.footer-block
+            .footer-ttl
+              p Quick Links
+            .footer-container.footer-b
+              .tbl
+                .tbl-row
+                  //
+                    <ul class="tbl-cell">
+                    <li><a href="event-1.html">Event Style 1</a></li>
+                    <li><a href="event-2.html">Event Style 2</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="privacy-policy.html">Privacy policy</a></li>
+                    <li><a href="terms-conditions.html">Terms condition</a></li>
+                    <li><a href="faq.html">Faq</a></li>
+                    </ul>
+                  ul.tbl-cell
+                    li
+                      a(href="login") Login
+                    li
+                      a(href="register") Register
+                    //- li
+                    //-   a(href="forgot.html") Forgot Password
+                    li
+                      a(href="myappointment") My Appointment
+                    li
+                      a(href="myrequest") My Request
+                    li
+                      a(href="myprofile") My Profile
+          .col-md-4.footer-block
+            .footer-ttl
+              p Newsletter
+            .footer-container.footer-c
+              .footer-subscribe
+           form(action="newsletter", method="post")
+                .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.form-input
+                  label.mdl-textfield__label(for="subscribe-email" ) Your Email
+                  span.mdl-textfield__error Please Enter Valid Email!
+                .footer-subscribe-button
+                  button.mdl-button.mdl-js-button.mdl-js-ripple-effect.button.button-primary Submit
+              ul.social-list.social-list-colored.footer-social
+                li
+                  a#footer-facebook.fa.fa-facebook(href="#" target="_blank")
+                  span.mdl-tooltip.mdl-tooltip--top(data-mdl-for="footer-facebook") Facebook
+                li
+                  a#footer-twitter.fa.fa-twitter(href="#" target="_blank")
+                  span.mdl-tooltip.mdl-tooltip--top(data-mdl-for="footer-twitter") Twitter
+                li
+                  a#footer-google.fa.fa-google(href="#" target="_blank")
+                  span.mdl-tooltip.mdl-tooltip--top(data-mdl-for="footer-google") Google
+                li
+                  a#footer-instagram.fa.fa-instagram(href="#" target="_blank")
+                  span.mdl-tooltip.mdl-tooltip--top(data-mdl-for="footer-instagram") Instagram
+                li
+                  a#footer-youtube.fa.fa-youtube(href="#" target="_blank")
+                  span.mdl-tooltip.mdl-tooltip--top(data-mdl-for="footer-youtube") Youtube
+                li
+                  a#footer-linkedin.fa.fa-linkedin(href="#" target="_blank")
+                  span.mdl-tooltip.mdl-tooltip--top(data-mdl-for="footer-linkedin") Linkedin
+                li
+                  a#footer-flickr.fa.fa-flickr(href="#" target="_blank")
+                  span.mdl-tooltip.mdl-tooltip--top(data-mdl-for="footer-flickr") Flickr
+                li
+                  a#footer-rss.fa.fa-rss(href="#" target="_blank")
+                  span.mdl-tooltip.mdl-tooltip--top(data-mdl-for="footer-rss") Rss
+      // End main Footer Section
+      // Start Copyright Section
+      #copyright
+        .layer-stretch
+          .paragraph-medium.paragraph-white 2018 © Kingsley ALL RIGHTS RESERVED. Website developed by Onyebuchi Kingsley
+      // End of Copyright Section
+    // End of Footer Section
+    // **********Included Scripts***********
+    // Jquery Library 2.1 JavaScript
+    script(src="js/jquery-2.1.4.min.js")
+    // Popper JavaScript
+    script(src="js/popper.min.js")
+    // Bootstrap Core JavaScript
+    script(src="js/bootstrap.min.js")
+    // Material Design Lite JavaScript
+    script(src="js/material.min.js")
+    // Material Select Field Script
+    script(src="js/mdl-selectfield.min.js")
+    // Flexslider Plugin JavaScript
+    script(src="js/jquery.flexslider.min.js")
+    // Owl Carousel Plugin JavaScript
+    script(src="js/owl.carousel.min.js")
+    // Scrolltofixed Plugin JavaScript
+    script(src="js/jquery-scrolltofixed.min.js")
+    // Magnific Popup Plugin JavaScript
+    script(src="js/jquery.magnific-popup.min.js")
+    // WayPoint Plugin JavaScript
+    script(src="js/jquery.waypoints.min.js")
+    // CounterUp Plugin JavaScript
+    script(src="js/jquery.counterup.js")
+    // SmoothScroll Plugin JavaScript
+    script(src="js/smoothscroll.min.js")
+    // Custom JavaScript for Klinik Template
+    script(src="js/custom.js")
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-93901876-1', 'auto');
+      ga('send', 'pageview');
+    // my js script
+    script(src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous")
+    script(src="Template/javascript/jquery.waypoints.min.js")
+    script(src="Template/javascript/script.js")

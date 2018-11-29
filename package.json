@@ -1,0 +1,36 @@
+{
+  "name": "clinicbackend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node ./app"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.2",
+    "body-parser": "^1.18.2",
+    "connect-flash": "*",
+    "connect-mongo": "^2.0.1",
+    "cookie-parser": "^1.4.3",
+    "debug": "~2.2.0",
+    "express": "^4.16.3",
+    "express-messages": "*",
+    "express-session": "^1.15.6",
+    "express-validator": "*",
+    "jade": "^1.11.0",
+    "mongo-connect": "0.0.6",
+    "mongodb": "^2.2.36",
+    "mongodb-core": "^3.1.0",
+    "mongoose": "^5.0.12",
+    "morgan": "^1.9.0",
+    "multer": "*",
+    "nodemon": "^1.18.3",
+    "passport": "*",
+    "passport-http": "^0.3.0",
+    "passport-local": "*",
+    "pug": "^2.0.3"
+  },
+  "description": ""
+}

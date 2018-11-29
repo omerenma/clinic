@@ -1,0 +1,858 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    // Site Title
+    title My Appointment
+    // Meta Description Tag
+    meta(name='Description', content='Klinik is a HTML5 & CSS3 responsive template')
+    // Favicon Icon
+    link(rel='icon', type='image/x-icon', href='images/favicon.png')
+    // Font Awesoeme Stylesheet CSS
+    link(rel='stylesheet', href='font-awesome/css/font-awesome.min.css')
+    // Google web Font
+    link(rel='stylesheet', type='text/css', href='https://fonts.googleapis.com/css?family=Montserrat:400,500')
+    // Bootstrap core CSS
+    link(rel='stylesheet', href='css/bootstrap.min.css')
+    // Material Design Lite Stylesheet CSS
+    link(rel='stylesheet', href='css/material.min.css')
+    // Material Design Select Field Stylesheet CSS
+    link(rel='stylesheet', href='css/mdl-selectfield.min.css')
+    // Owl Carousel Stylesheet CSS
+    link(rel='stylesheet', href='css/owl.carousel.min.css')
+    // Animate Stylesheet CSS
+    link(rel='stylesheet', href='css/animate.min.css')
+    // Magnific Popup Stylesheet CSS
+    link(rel='stylesheet', href='css/magnific-popup.css')
+    // Flex Slider Stylesheet CSS
+    link(rel='stylesheet', href='css/flexslider.css')
+    // Custom Main Stylesheet CSS
+    link(rel='stylesheet', href='css/style.css')
+  body
+    // Start Header
+    header#header
+      // Start Header Top Section
+      #hdr-top-wrapper
+        .layer-stretch.hdr-top
+          .hdr-top-block.hidden-xs
+            #hdr-social
+              ul.social-list.social-list-sm
+                li
+                  a.width-auto.font-13 Follow Us : 
+                li
+                  a#hdr-facebook(href='#', target='_blank')
+                    i.fa.fa-facebook
+                  span.mdl-tooltip.mdl-tooltip--bottom(data-mdl-for='hdr-facebook') Facebook
+                li
+                  a#hdr-twitter(href='#', target='_blank')
+                    i.fa.fa-twitter
+                  span.mdl-tooltip.mdl-tooltip--bottom(data-mdl-for='hdr-twitter') Twitter
+                li
+                  a#hdr-google(href='#', target='_blank')
+                    i.fa.fa-google
+                  span.mdl-tooltip.mdl-tooltip--bottom(data-mdl-for='hdr-google') Google
+                li
+                  a#hdr-instagram(href='#', target='_blank')
+                    i.fa.fa-instagram
+                  span.mdl-tooltip.mdl-tooltip--bottom(data-mdl-for='hdr-instagram') Instagram
+                li
+                  a#hdr-youtube(href='#', target='_blank')
+                    i.fa.fa-youtube
+                  span.mdl-tooltip.mdl-tooltip--bottom(data-mdl-for='hdr-youtube') Youtube
+                li
+                  a#hdr-linkedin(href='#', target='_blank')
+                    i.fa.fa-linkedin
+                  span.mdl-tooltip.mdl-tooltip--bottom(data-mdl-for='hdr-linkedin') Linkedin
+                li
+                  a#hdr-flickr(href='#', target='_blank')
+                    i.fa.fa-flickr
+                  span.mdl-tooltip.mdl-tooltip--bottom(data-mdl-for='hdr-flickr') Flickr
+                li
+                  a#hdr-rss(href='#', target='_blank')
+                    i.fa.fa-rss
+                  span.mdl-tooltip.mdl-tooltip--bottom(data-mdl-for='hdr-rss') Rss
+          .hdr-top-line.hidden-xs
+          .hdr-top-block.hdr-number
+            .font-13
+              i.fa.fa-mobile.font-20.tbl-cell  
+              span.hidden-xs.tbl-cell  Emergency Number : 
+              span.tbl-cell 1800000000
+          .hdr-top-line
+          .hdr-top-block
+            .theme-dropdown
+              a#profile-menu.mdl-button.mdl-js-button.mdl-js-ripple-effect.font-13
+                i.fa.fa-user-o.color-black
+                |  My Account
+              ul.mdl-menu.mdl-menu--bottom-right.mdl-js-menu.mdl-js-ripple-effect.metarial-menu(data-mdl-for='profile-menu')
+                li.mdl-menu__item
+                  a(href='login.html')
+                    i.fa.fa-sign-in
+                    | Login
+                li.mdl-menu__item
+                  a(data-toggle='modal', data-target='#loginpopup')
+                    i.fa.fa-sign-in
+                    | Login Popup
+                li.mdl-menu__item
+                  a(href='register.html')
+                    i.fa.fa-user-o
+                    | Register
+                li.mdl-menu__item
+                  a(data-toggle='modal', data-target='#registerpopup')
+                    i.fa.fa-user-o
+                    | Register Popup
+                li.mdl-menu__item
+                  a(href='forgot.html')
+                    i.fa.fa-key
+                    | Forgot Password
+                li.mdl-menu__item
+                  a(href='about.html')
+                    i.fa.fa-info
+                    | Help
+      // End Header Top Section
+      // Start Main Header Section
+      //- #hdr-wrapper
+      //-   .layer-stretch.hdr
+      //-     .tbl
+      //-       .tbl-row
+      //-         // Start Header Logo Section
+      //-         .tbl-cell.hdr-logo
+      //-           a(href='index.html')
+      //-             img(src='images/logo.png', alt='')
+      //-         // End Header Logo Section
+      //-         .tbl-cell.hdr-menu
+      //-           // Start Menu Section
+      //-           ul.menu
+      //-             li
+      //-               a#menu-home.mdl-button.mdl-js-button.mdl-js-ripple-effect
+      //-                 | Home 
+      //-                 i.fa.fa-chevron-down
+      //-               ul.menu-dropdown
+      //-                 li
+      //-                   a(href='index.html') Home Style 1
+      //-                 li
+      //-                   a(href='index-1.html') Home Style 2
+      //-                 li
+      //-                   a(href='index-2.html') Home Style 3
+      //-                 li
+      //-                   a(href='index-3.html') Home Style 4
+      //-                 li
+      //-                   a(href='index-4.html') Home Style 5
+      //-                 li
+      //-                   a(href='index-5.html') Home Style 6
+      //-             li.menu-megamenu-li
+      //-               a#menu-pages.mdl-button.mdl-js-button.mdl-js-ripple-effect
+      //-                 | Pages 
+      //-                 i.fa.fa-chevron-down
+      //-               ul.menu-megamenu
+      //-                 li.row
+      //-                   .col-lg-3
+      //-                     .megamenu-ttl Link 1
+      //-                     ul
+      //-                       li
+      //-                         a(href='event-1.html') Event Style 1
+      //-                       li
+      //-                         a(href='event-2.html') Event Style 2
+      //-                       li
+      //-                         a(href='event-3.html') Event Style 3
+      //-                       li
+      //-                         a(href='faq.html') FAQ
+      //-                       li
+      //-                         a(href='503.html') 503 Temporarily Unavailable
+      //-                   .col-lg-3
+      //-                     .megamenu-ttl Link 2
+      //-                     ul
+      //-                       li
+      //-                         a(href='departments-1.html') Departments Style 1
+      //-                       li
+      //-                         a(href='departments-2.html') Departments Style 2
+      //-                       li
+      //-                         a(href='gallery.html') Gallery Style 1
+      //-                       li
+      //-                         a(href='gallery-1.html') Gallery Style 2
+      //-                       li
+      //-                         a(href='404.html') 404 Page Not Found
+      //-                   .col-lg-2
+      //-                     .megamenu-ttl Link 3
+      //-                     ul
+      //-                       li
+      //-                         a(href='about.html') About Us
+      //-                       li
+      //-                         a(href='contact.html') Contact Us
+      //-                       li
+      //-                         a(href='invoice.html') Invoice
+      //-                       li
+      //-                         a(href='terms-conditions.html') Terms & Conditions
+      //-                       li
+      //-                         a(href='privacy-policy.html') Privacy Policy
+      //-                   .col-lg-4
+      //-                     .theme-img
+      //-                       img(src='uploads/service-5.jpg', alt='')
+      //-             li
+      //-               a#menu-service.mdl-button.mdl-js-button.mdl-js-ripple-effect
+      //-                 | Service 
+      //-                 i.fa.fa-chevron-down
+      //-               ul.menu-dropdown
+      //-                 li
+      //-                   a Services Style 1
+      //-                   ul.menu-dropdown
+      //-                     li
+      //-                       a(href='services-1.html') Services Style 1
+      //-                     li
+      //-                       a(href='services-4.html') Services Style 1 with Right Sidebar
+      //-                     li
+      //-                       a(href='services-7.html') Services Style 1 with Left Sidebar
+      //-                 li
+      //-                   a Servcie Style 2
+      //-                   ul.menu-dropdown
+      //-                     li
+      //-                       a(href='services-2.html') Services Style 2
+      //-                     li
+      //-                       a(href='services-5.html') Services Style 2 with Right Sidebar
+      //-                     li
+      //-                       a(href='service.html') Single Service Page
+      //-                 li
+      //-                   a Service Style 3
+      //-                   ul.menu-dropdown
+      //-                     li
+      //-                       a(href='services-3.html') Services Style 3
+      //-                     li
+      //-                       a(href='services-6.html') Services Style 3 with Right Sidebar
+      //-                     li
+      //-                       a(href='services-8.html') Services Style 3 with Left Sidebar
+      //-                 li
+      //-                   a Services Style 4
+      //-                   ul.menu-dropdown
+      //-                     li
+      //-                       a(href='services-9.html') Services Style 4
+      //-                     li
+      //-                       a(href='services-9.html') Services Style 4 with Right Sidebar
+      //-                 li
+      //-                   a(href='service.html') Service Detail
+      //-             li.menu-megamenu-li
+      //-               a#menu-doctor.mdl-button.mdl-js-button.mdl-js-ripple-effect
+      //-                 | Doctors 
+      //-                 i.fa.fa-chevron-down
+      //-               ul.menu-megamenu
+      //-                 li.row
+      //-                   .col-lg-4
+      //-                     .megamenu-ttl Doctors Link
+      //-                     ul
+      //-                       li
+      //-                         a(href='doctors-1.html') Doctors Style 1
+      //-                       li
+      //-                         a(href='doctors-2.html') Doctors Style 2
+      //-                       li
+      //-                         a(href='doctors-3.html') Doctors Style 3
+      //-                       li
+      //-                         a(href='doctors-4.html') Doctors Style 1 with Right Sidebar
+      //-                       li
+      //-                         a(href='doctors-7.html') Doctors Style 1 with Left Sidebar
+      //-                   .col-lg-4
+      //-                     .megamenu-ttl Doctors Link
+      //-                     ul
+      //-                       li
+      //-                         a(href='doctors-5.html') Doctors Style 2 with Right Sidebar
+      //-                       li
+      //-                         a(href='doctors-6.html') Doctors Style 3 with Right Sidebar
+      //-                       li
+      //-                         a(href='doctors-8.html') Doctors Style 3 with left Sidebar
+      //-                       li
+      //-                         a(href='doctor-1.html') Doctor Detail Style 1
+      //-                       li
+      //-                         a(href='doctor-2.html') Doctor Detail Style 2
+      //-                   .col-lg-4.d-none.d-sm-none.s-md-none.d-lg-block.d-xl-block
+      //-                     .megamenu-ttl Our Skills & Achievement
+      //-                     .doctor-skills.mt-2
+      //-                       p.font-14
+      //-                         | Brain Surgery 
+      //-                         span.badge.badge-primary.badge-pill.float-right 75%
+      //-                       .progress.progress-sm.mb-4
+      //-                         .progress-bar.progress-bar-striped.bg-primary(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+      //-                     .doctor-skills
+      //-                       p.font-14
+      //-                         | Heart Surgery 
+      //-                         span.badge.badge-danger.badge-pill.float-right 65%
+      //-                       .progress.progress-sm.mb-4
+      //-                         .progress-bar.progress-bar-striped.bg-danger(role='progressbar', style='width: 65%', aria-valuenow='65', aria-valuemin='0', aria-valuemax='100')
+      //-                     .doctor-skills
+      //-                       p.font-14
+      //-                         | General Surgery 
+      //-                         span.badge.badge-warning.badge-pill.float-right 87%
+      //-                       .progress.progress-sm.mb-4
+      //-                         .progress-bar.progress-bar-striped.bg-warning(role='progressbar', style='width: 87%', aria-valuenow='87', aria-valuemin='0', aria-valuemax='100')
+      //-             li
+      //-               a#menu-blog.mdl-button.mdl-js-button.mdl-js-ripple-effect
+      //-                 | Blog 
+      //-                 i.fa.fa-chevron-down
+      //-               ul.menu-dropdown
+      //-                 li
+      //-                   a Blog Style 1
+      //-                   ul.menu-dropdown
+      //-                     li
+      //-                       a(href='blogs-1.html') Blog style 1
+      //-                     li
+      //-                       a(href='blogs-3.html') Blog style 1 with Right Sidebar
+      //-                     li
+      //-                       a(href='blogs-5.html') Blog style 1 with Left Sidebar
+      //-                 li
+      //-                   a Blog Style 2
+      //-                   ul.menu-dropdown
+      //-                     li
+      //-                       a(href='blogs-2.html') Blog style 2
+      //-                     li
+      //-                       a(href='blogs-4.html') Blog style 2 with Right Sidebar
+      //-                 li
+      //-                   a Blog Style 3
+      //-                   ul.menu-dropdown
+      //-                     li
+      //-                       a(href='blogs-6.html') Blog style 3 with Right Sidebar
+      //-                     li
+      //-                       a(href='blogs-7.html') Blog style 3 with Left Sidebar
+      //-                 li
+      //-                   a(href='blog-1.html') Blog Details 1
+      //-                 li
+      //-                   a(href='blog-2.html') Blog Details 2
+      //-             li
+      //-               a#menu-profile.mdl-button.mdl-js-button.mdl-js-ripple-effect
+      //-                 | Profile 
+      //-                 i.fa.fa-chevron-down
+      //-               ul.menu-dropdown
+      //-                 li
+      //-                   a(href='login.html') Login Page
+      //-                 li
+      //-                   a(data-toggle='modal', data-target='#loginpopup') Login Popup
+      //-                 li
+      //-                   a(href='register.html') Register Page
+      //-                 li
+      //-                   a(data-toggle='modal', data-target='#registerpopup') Register Popup
+      //-                 li
+      //-                   a(href='myappointment.html') My Appointment Page
+      //-                 li
+      //-                   a(href='myrequest.html') My Request Page
+      //-                 li
+      //-                   a(href='myprofile.html') My Profile Page
+      //-             li
+      //-               a#menu-shortcodes.mdl-button.mdl-js-button.mdl-js-ripple-effect(href='components.html') Components
+      //-             li
+      //-             li.mobile-menu-close
+      //-               i.fa.fa-times
+      //-           // End Menu Section
+      //-           #menu-bar
+      //-             a
+      //-               i.fa.fa-bars
+      // End Main Header Section
+    // End Header
+    // Start Page Title Section
+    .page-ttl
+      .layer-stretch
+        .page-ttl-container
+          h1 My Appointment
+          p
+            a(href='#') Home
+            |  → 
+            span My Appointment
+    // End Page Title Section
+    // Start My Appointment Section
+    #myappointment-page.layer-stretch
+      .layer-wrapper.layer-bottom-0
+        .row.myappointment-container
+          .col-sm-6.col-md-4
+            .theme-material-card
+              .myappointment-text
+                i.fa.fa-id-card
+                span.paragraph-medium.paragraph-black ID - 20170619273033418
+              .myappointment-text
+                i.fa.fa-user-md
+                span.paragraph-medium.paragraph-black Dr. Linda Adams
+              .myappointment-text
+                i.fa.fa-user-o
+                span.paragraph-medium.paragraph-black Arya Stark
+              .myappointment-text
+                i.fa.fa-calendar-plus-o
+                span.paragraph-medium.paragraph-black 10 Jul 2017
+              .myappointment-text
+                i.fa.fa-clock-o
+                span.paragraph-medium.paragraph-black 10:00
+              .myappointment-text
+                i.fa.fa-flag-o
+                span.paragraph-medium.paragraph-black In Process
+              .myappointment-view
+                a.mdl-button.mdl-js-button.mdl-button--colored.mdl-js-ripple-effect.mdl-button--raised.button.button-primary.button-sm.pull-right Read More
+          .col-sm-6.col-md-4
+            .theme-material-card
+              .myappointment-text
+                i.fa.fa-id-card
+                span.paragraph-medium.paragraph-black ID - 2017060244121112
+              .myappointment-text
+                i.fa.fa-user-md
+                span.paragraph-medium.paragraph-black Dr. Barbara Baker
+              .myappointment-text
+                i.fa.fa-user-o
+                span.paragraph-medium.paragraph-black Sandra White
+              .myappointment-text
+                i.fa.fa-calendar-plus-o
+                span.paragraph-medium.paragraph-black 08 Jul 2017
+              .myappointment-text
+                i.fa.fa-clock-o
+                span.paragraph-medium.paragraph-black 11:00
+              .myappointment-text
+                i.fa.fa-flag-o
+                span.paragraph-medium.paragraph-black.myappointment-status-queue In Queue
+              .myappointment-view
+                a.mdl-button.mdl-js-button.mdl-button--colored.mdl-js-ripple-effect.mdl-button--raised.button.button-primary.button-sm.pull-right Read More
+          .col-sm-6.col-md-4
+            .theme-material-card
+              .myappointment-text
+                i.fa.fa-id-card
+                span.paragraph-medium.paragraph-black ID - 20170605320032933
+              .myappointment-text
+                i.fa.fa-user-md
+                span.paragraph-medium.paragraph-black Dr. Theodore Bennett
+              .myappointment-text
+                i.fa.fa-user-o
+                span.paragraph-medium.paragraph-black Leon Greyjoy
+              .myappointment-text
+                i.fa.fa-calendar-plus-o
+                span.paragraph-medium.paragraph-black 08 Jul 2017
+              .myappointment-text
+                i.fa.fa-clock-o
+                span.paragraph-medium.paragraph-black 11:20
+              .myappointment-text
+                i.fa.fa-flag-o
+                span.paragraph-medium.paragraph-black In Queue
+              .myappointment-view
+                a.mdl-button.mdl-js-button.mdl-button--colored.mdl-js-ripple-effect.mdl-button--raised.button.button-primary.button-sm.pull-right Read More
+          .col-sm-6.col-md-4
+            .theme-material-card
+              .myappointment-text
+                i.fa.fa-id-card
+                span.paragraph-medium.paragraph-black ID - 20170602524011535
+              .myappointment-text
+                i.fa.fa-user-md
+                span.paragraph-medium.paragraph-black Dr. Theodore Bennett
+              .myappointment-text
+                i.fa.fa-user-o
+                span.paragraph-medium.paragraph-black Bill Cutting
+              .myappointment-text
+                i.fa.fa-calendar-plus-o
+                span.paragraph-medium.paragraph-black 07 Jul 2017
+              .myappointment-text
+                i.fa.fa-clock-o
+                span.paragraph-medium.paragraph-black 11:00
+              .myappointment-text
+                i.fa.fa-flag-o
+                span.paragraph-medium.paragraph-black In Queue
+              .myappointment-view
+                a.mdl-button.mdl-js-button.mdl-button--colored.mdl-js-ripple-effect.mdl-button--raised.button.button-primary.button-sm.pull-right Read More
+          .col-sm-6.col-md-4
+            .theme-material-card
+              .myappointment-text
+                i.fa.fa-id-card
+                span.paragraph-medium.paragraph-black ID - 20170602134120455
+              .myappointment-text
+                i.fa.fa-user-md
+                span.paragraph-medium.paragraph-black Dr. Steve Soeren
+              .myappointment-text
+                i.fa.fa-user-o
+                span.paragraph-medium.paragraph-black Donna Lewis
+              .myappointment-text
+                i.fa.fa-calendar-plus-o
+                span.paragraph-medium.paragraph-black 06 Jul 2017
+              .myappointment-text
+                i.fa.fa-clock-o
+                span.paragraph-medium.paragraph-black 09:00
+              .myappointment-text
+                i.fa.fa-flag-o
+                span.paragraph-medium.paragraph-black Confirm
+              .myappointment-view
+                a.mdl-button.mdl-js-button.mdl-button--colored.mdl-js-ripple-effect.mdl-button--raised.button.button-primary.button-sm.pull-right Read More
+          .col-sm-6.col-md-4
+            .theme-material-card
+              .myappointment-text
+                i.fa.fa-id-card
+                span.paragraph-medium.paragraph-black ID - 20170602484121405
+              .myappointment-text
+                i.fa.fa-user-md
+                span.paragraph-medium.paragraph-black Dr. Melissa Bates
+              .myappointment-text
+                i.fa.fa-user-o
+                span.paragraph-medium.paragraph-black Aldrin Buzz
+              .myappointment-text
+                i.fa.fa-calendar-plus-o
+                span.paragraph-medium.paragraph-black 06 Jul 2017
+              .myappointment-text
+                i.fa.fa-clock-o
+                span.paragraph-medium.paragraph-black 08:00
+              .myappointment-text
+                i.fa.fa-flag-o
+                span.paragraph-medium.paragraph-black In Process
+              .myappointment-view
+                a.mdl-button.mdl-js-button.mdl-button--colored.mdl-js-ripple-effect.mdl-button--raised.button.button-primary.button-sm.pull-right Read More
+    // End My Appointment Section
+    // Start My Appointment Modal
+    #myappointment-popup.modal.fade(role='dialog')
+      .modal-dialog.modal-lg
+        .modal-content
+          .modal-header.text-center
+            h4.modal-title.font-20 ID - 2017060244121112
+            button.close(type='button', data-dismiss='modal') ×
+          .modal-body
+            .myfeedback-popup-tbl
+              .myappointment-popup-tbl
+                .tbl-row
+                  .tbl-cell
+                    i.fa.fa-user-md
+                  .tbl-cell
+                    span.paragraph-medium.paragraph-black Doctor
+                  .tbl-cell
+                    p.paragraph-medium.paragraph-black Dr. Daniel Barnes
+                .tbl-row
+                  .tbl-cell
+                    i.fa.fa-user-o
+                  .tbl-cell
+                    span.paragraph-medium.paragraph-black Name
+                  .tbl-cell
+                    p.paragraph-medium.paragraph-black Charlie Buzz
+                .tbl-row
+                  .tbl-cell
+                    i.fa.fa-calendar-plus-o
+                  .tbl-cell
+                    span.paragraph-medium.paragraph-black Date
+                  .tbl-cell
+                    p.paragraph-medium.paragraph-black 27 April 2017
+                .tbl-row
+                  .tbl-cell
+                    i.fa.fa-hourglass-o
+                  .tbl-cell
+                    span.paragraph-medium.paragraph-black Time
+                  .tbl-cell
+                    p.paragraph-medium.paragraph-black 9:00 AM
+                .tbl-row
+                  .tbl-cell
+                    i.fa.fa-hospital-o
+                  .tbl-cell
+                    span.paragraph-medium.paragraph-black Department
+                  .tbl-cell
+                    p.paragraph-medium.paragraph-black Orthology
+                .tbl-row
+                  .tbl-cell
+                    i.fa.fa-flag-o
+                  .tbl-cell
+                    span.paragraph-medium.paragraph-black Status
+                  .tbl-cell
+                    p.paragraph-medium.paragraph-black Confirmed
+                .tbl-row
+                  .tbl-cell
+                    i.fa.fa-file-text-o
+                  .tbl-cell
+                    span.paragraph-medium.paragraph-black Advice
+                  .tbl-cell
+                    p.paragraph-medium.paragraph-black
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus cum animi sit ipsum eligendi exercitationem eaque molestiae porro eum, recusandae deleniti beatae consectetur in sint alias nulla tempora, dolores nisi.
+          .modal-footer
+            button.btn.btn-default(type='button', data-dismiss='modal') Close
+    // End My Appointment Modal
+    // Start Emergency Section
+    #emergency
+      .layer-stretch
+        .layer-wrapper
+          .layer-ttl
+            h3 On Emergency
+          .layer-container
+            .paragraph-medium.paragraph-black
+              | At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas.
+            .emergency-number Call : 0000000000
+    // End Emergency Section
+    // Start Make an Appointment Modal
+    #appointment.modal.fade(role='dialog')
+      .modal-dialog.modal-lg
+        .modal-content
+          .modal-header.text-center
+            h5.modal-title Make An Appointment
+            button.close(type='button', data-dismiss='modal') ×
+          .modal-body
+            .appointment-error
+            .row
+              .col-md-6
+                .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.form-input-icon
+                  i.fa.fa-user-o
+                  input#appointment-name.mdl-textfield__input(type='text', pattern='[A-Z,a-z, ]*')
+                  label.mdl-textfield__label(for='appointment-name') Name
+                  span.mdl-textfield__error Please Enter Valid Name!
+              .col-md-6
+                .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.form-input-icon
+                  i.fa.fa-envelope-o
+                  input#appointment-email.mdl-textfield__input(type='text', pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$')
+                  label.mdl-textfield__label(for='appointment-email') Email
+                  span.mdl-textfield__error Please Enter Valid Email!
+              .col-md-6
+                .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.form-input-icon
+                  i.fa.fa-phone
+                  input#appointment-mobile.mdl-textfield__input(type='text', pattern='[0-9]*')
+                  label.mdl-textfield__label(for='appointment-mobile') Mobile Number
+                  span.mdl-textfield__error Please Enter Valid Mobile Number!
+              .col-md-6
+                .mdl-selectfield.mdl-js-selectfield.mdl-selectfield--floating-label.form-input-icon
+                  i.fa.fa-hospital-o
+                  select#appointment-department.mdl-selectfield__select
+                    option(value='')  
+                    option(value='1') Gynaecology
+                    option(value='2') Orthology
+                    option(value='3') Dermatologist
+                    option(value='4') Anaesthesia
+                    option(value='5') Ayurvedic
+                  label.mdl-selectfield__label(for='appointment-department') Choose Department
+              .col-md-6
+                .mdl-selectfield.mdl-js-selectfield.mdl-selectfield--floating-label.form-input-icon
+                  i.fa.fa-user-md
+                  select#appointment-doctor.mdl-selectfield__select
+                    option(value='')  
+                    option(value='1') Dr. Daniel Barnes
+                    option(value='2') Dr. Steve Soeren
+                    option(value='3') Dr. Barbara Baker
+                    option(value='4') Dr. Melissa Bates
+                    option(value='5') Dr. Linda Adams
+                  label.mdl-selectfield__label(for='appointment-doctor') Choose Doctor
+              .col-md-6
+                .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.form-input-icon
+                  i.fa.fa-calendar-o
+                  input#appointment-date.mdl-textfield__input(type='text', onfocus="(this.type='date')", onblur="(this.type='text')")
+                  label.mdl-textfield__label(for='appointment-date') Date
+                  span.mdl-textfield__error Please Enter Valid Date Number!
+            .text-center.pt-4
+              button.mdl-button.mdl-js-button.mdl-button--colored.mdl-js-ripple-effect.mdl-button--raised.button.button-primary.button-lg.make-appointment Submit
+    // End Make an Appointment Modal
+    // Start Login Modal
+    #loginpopup.modal.fade(role='dialog')
+      .modal-dialog
+        .modal-content
+          .modal-header.text-center
+            h5.modal-title Login Now
+            button.close(type='button', data-dismiss='modal') ×
+          .modal-body.text-center
+            .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.form-input-icon
+              i.fa.fa-envelope-o
+              input#loginpopup-email.mdl-textfield__input(type='text', pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$')
+              label.mdl-textfield__label(for='loginpopup-email')
+                | Email 
+                em  *
+              span.mdl-textfield__error Please Enter Valid Email!
+            .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.form-input-icon
+              i.fa.fa-key
+              input#loginpopup-password.mdl-textfield__input(type='password')
+              label.mdl-textfield__label(for='loginpopup-password')
+                | Password 
+                em  *
+              span.mdl-textfield__error Please Enter Valid Password!
+              .forgot-pass Forgot Password?
+            .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.form-input-icon.form-bot-check
+              i.fa.fa-question
+              input#loginpopup-bot.mdl-textfield__input(type='number')
+              label.mdl-textfield__label(for='loginpopup-bot')
+                | What is 7 plus 1 = 
+                em * 
+              span.mdl-textfield__error Please Enter Correct Value!
+            .form-submit
+              button.mdl-button.mdl-js-button.mdl-js-ripple-effect.button.button-primary Login Now
+            .or-using Or Using
+            .social-login
+              a.social-facebook(href='#')
+                i.fa.fa-facebook
+                | Facebook
+              a.social-google(href='#')
+                i.fa.fa-google
+                | Google
+            .login-link
+              span.paragraph-small Don't have an account?
+              a(href='#') Register as New User
+    // End Login Modal
+    // Start Register Modal
+    #registerpopup.modal.fade(role='dialog')
+      .modal-dialog
+        .modal-content
+          .modal-header.text-center
+            h5.modal-title Register as New User
+            button.close(type='button', data-dismiss='modal') ×
+          .modal-body.text-center
+            .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.form-input-icon
+              i.fa.fa-user-o
+              input#registerpopup-name.mdl-textfield__input(type='text', pattern='[A-Z,a-z, ]*')
+              label.mdl-textfield__label(for='registerpopup-name')
+                | Name 
+                em  *
+              span.mdl-textfield__error Please Enter Valid Name!
+            .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.form-input-icon
+              i.fa.fa-envelope-o
+              input#registerpopup-email.mdl-textfield__input(type='text', pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$')
+              label.mdl-textfield__label(for='registerpopup-email')
+                | Email 
+                em  *
+              span.mdl-textfield__error Please Enter Valid Email!
+            .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.form-input-icon
+              i.fa.fa-key
+              input#registerpopup-password.mdl-textfield__input(type='password')
+              label.mdl-textfield__label(for='registerpopup-password')
+                | Password 
+                em  *
+              span.mdl-textfield__error Please Enter Valid Password(Min 6 Character)!
+            .login-condition
+              | By clicking Creat Account you agree to our 
+              a(href='#') terms & condition
+            .form-submit
+              button.mdl-button.mdl-js-button.mdl-js-ripple-effect.button.button-primary Create Account
+            .or-using Or Using
+            .social-login
+              a.social-facebook(href='#')
+                i.fa.fa-facebook
+                | Facebook
+              a.social-google(href='#')
+                i.fa.fa-google
+                | Google
+            .login-link
+              span.paragraph-small Already have an account?
+              a(href='#') Login Now
+    // End Register Modal
+    // Fixed Appointment Button at Bottom
+    #appointment-button.animated.fadeInUp
+      button#appointment-now.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored.mdl-button--raised
+        i.fa.fa-plus
+      .mdl-tooltip.mdl-tooltip--top(data-mdl-for='appointment-now') Make An Appointment
+    // End Fixed Appointment Button at Bottom
+    // Start Footer Section
+    footer#footer
+      .layer-stretch
+        // Start main Footer Section
+        .row.layer-wrapper
+          .col-md-4.footer-block
+            .footer-ttl
+              p Basic Info
+            .footer-container.footer-a
+              .tbl
+                .tbl-row
+                  .tbl-cell
+                    i.fa.fa-map-marker
+                  .tbl-cell
+                    p.paragraph-medium.paragraph-white
+                      | Your office, Building Name
+                      br
+                      |                                         Street name, Area
+                      br
+                      |                                         City, Country Pin Code
+                .tbl-row
+                  .tbl-cell
+                    i.fa.fa-phone
+                  .tbl-cell
+                    p.paragraph-medium.paragraph-white 11122333333
+                .tbl-row
+                  .tbl-cell
+                    i.fa.fa-envelope
+                  .tbl-cell
+                    p.paragraph-medium.paragraph-white hello@yourdomain.com
+          .col-md-4.footer-block
+            .footer-ttl
+              p Quick Links
+            .footer-container.footer-b
+              .tbl
+                .tbl-row
+                  ul.tbl-cell
+                    li
+                      a(href='event-1.html') Event Style 1
+                    li
+                      a(href='event-2.html') Event Style 2
+                    li
+                      a(href='contact.html') Contact
+                    li
+                      a(href='gallery.html') Gallery
+                    li
+                      a(href='privacy-policy.html') Privacy policy
+                    li
+                      a(href='terms-conditions.html') Terms condition
+                    li
+                      a(href='faq.html') Faq
+                  ul.tbl-cell
+                    li
+                      a(href='login.html') Login
+                    li
+                      a(href='register.html') Register
+                    li
+                      a(href='forgot.html') Forgot Password
+                    li
+                      a(href='myappointment.html') My Appointment
+                    li
+                      a(href='myrequest.html') My Request
+                    li
+                      a(href='myprofile.html') My Profile
+          .col-md-4.footer-block
+            .footer-ttl
+              p Newsletter
+            .footer-container.footer-c
+              .footer-subscribe
+                .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.form-input
+                  input#subscribe-email.mdl-textfield__input(type='text', pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$')
+                  label.mdl-textfield__label(for='subscribe-email') Your Email
+                  span.mdl-textfield__error Please Enter Valid Email!
+                .footer-subscribe-button
+                  button.mdl-button.mdl-js-button.mdl-js-ripple-effect.button.button-primary Submit
+              ul.social-list.social-list-colored.footer-social
+                li
+                  a#footer-facebook.fa.fa-facebook(href='#', target='_blank')
+                  span.mdl-tooltip.mdl-tooltip--top(data-mdl-for='footer-facebook') Facebook
+                li
+                  a#footer-twitter.fa.fa-twitter(href='#', target='_blank')
+                  span.mdl-tooltip.mdl-tooltip--top(data-mdl-for='footer-twitter') Twitter
+                li
+                  a#footer-google.fa.fa-google(href='#', target='_blank')
+                  span.mdl-tooltip.mdl-tooltip--top(data-mdl-for='footer-google') Google
+                li
+                  a#footer-instagram.fa.fa-instagram(href='#', target='_blank')
+                  span.mdl-tooltip.mdl-tooltip--top(data-mdl-for='footer-instagram') Instagram
+                li
+                  a#footer-youtube.fa.fa-youtube(href='#', target='_blank')
+                  span.mdl-tooltip.mdl-tooltip--top(data-mdl-for='footer-youtube') Youtube
+                li
+                  a#footer-linkedin.fa.fa-linkedin(href='#', target='_blank')
+                  span.mdl-tooltip.mdl-tooltip--top(data-mdl-for='footer-linkedin') Linkedin
+                li
+                  a#footer-flickr.fa.fa-flickr(href='#', target='_blank')
+                  span.mdl-tooltip.mdl-tooltip--top(data-mdl-for='footer-flickr') Flickr
+                li
+                  a#footer-rss.fa.fa-rss(href='#', target='_blank')
+                  span.mdl-tooltip.mdl-tooltip--top(data-mdl-for='footer-rss') Rss
+      // End main Footer Section
+      // Start Copyright Section
+      #copyright
+        .layer-stretch
+          .paragraph-medium.paragraph-white 2017 © Pepdev ALL RIGHTS RESERVED.
+      // End of Copyright Section
+    // End of Footer Section
+    // **********Included Scripts***********
+    // Jquery Library 2.1 JavaScript
+    script(src='js/jquery-2.1.4.min.js')
+    // Popper JavaScript
+    script(src='js/popper.min.js')
+    // Popper JavaScript
+    script(src='js/popper.min.js')
+    // Bootstrap Core JavaScript
+    script(src='js/bootstrap.min.js')
+    // Material Design Lite JavaScript
+    script(src='js/material.min.js')
+    // Material Select Field Script
+    script(src='js/mdl-selectfield.min.js')
+    // Flexslider Plugin JavaScript
+    script(src='js/jquery.flexslider.min.js')
+    // Owl Carousel Plugin JavaScript
+    script(src='js/owl.carousel.min.js')
+    // Scrolltofixed Plugin JavaScript
+    script(src='js/jquery-scrolltofixed.min.js')
+    // Magnific Popup Plugin JavaScript
+    script(src='js/jquery.magnific-popup.min.js')
+    // WayPoint Plugin JavaScript
+    script(src='js/jquery.waypoints.min.js')
+    // CounterUp Plugin JavaScript
+    script(src='js/jquery.counterup.js')
+    // SmoothScroll Plugin JavaScript
+    script(src='js/smoothscroll.min.js')
+    // Custom JavaScript for Klinik Template
+    script(src='js/custom.js')
